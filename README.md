@@ -42,6 +42,18 @@ Easy steps:
 4. az login -> Browser will open to login to your azure account
 5. az webapp deployment source config-zip --resource-group resource_group_name --name app_service_name --src zip_name.zip
 
+## Python 3.8 startup:
+Add Application setting: SCM_DO_BUILD_DURING_DEPLOYMENT=1
+Use Python 3.8 with startup command: python3.8 -m aiohttp.web -H 0.0.0.0 -P 8000 app:init_func
+
+## Resources required
+1. Resource Group
+2. QnA Maker
+3. Bing Search
+4. Computer Vision
+5. Linux App Service
+6. Azure Bot - To give the App Service URL once the app is up and running.
+
 
 ## Further reading
 
